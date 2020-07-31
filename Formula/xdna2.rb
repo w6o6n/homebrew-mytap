@@ -5,10 +5,9 @@ class Xdna2 < Formula
   sha256 "3d75a154ad9249fe3eb535c703c6623a99d7b0e00da4652bcfdf79929ab49245"
   license "GPL-3.0-only"
 
-  depends_on :gettext => "0.19"
+  depends_on "gettext" => "0.19"
 
   def install
-
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
