@@ -17,6 +17,6 @@ class Xdna2 < Formula
   end
 
   test do
-    system "false"
+    system "xdna", "--version"
   end
 end
