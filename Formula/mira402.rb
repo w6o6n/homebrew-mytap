@@ -15,8 +15,12 @@ class Mira402 < Formula
 
   # Fix a compiler error on OS X 10.8
   # http://www.freelists.org/post/mira_talk/Type-mismatch-of-LexerInput-and-LexerOutput-PATCH
-  def patches
-    DATA if MacOS.version >= :mountain_lion
+  # def patches
+    # DATA if MacOS.version >= :mountain_lion
+  # end
+  if MacOS.version >= :mountain_lion
+    patch :DATA do
+    end
   end
 
   def install
