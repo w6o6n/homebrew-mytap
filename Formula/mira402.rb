@@ -42,7 +42,7 @@ __END__
 diff -ur a/src/EdIt/parameters_flexer.cc b/src/EdIt/parameters_flexer.cc
 --- a/src/EdIt/parameters_flexer.cc 2012-08-29 10:33:02.000000000 -0700
 +++ b/src/EdIt/parameters_flexer.cc 2012-10-22 10:58:26.000000000 -0700
-@@ -1367,9 +1367,9 @@
+@@ -7481,9 +7481,9 @@
  }
 
  #ifdef YY_INTERACTIVE
@@ -54,7 +54,7 @@ diff -ur a/src/EdIt/parameters_flexer.cc b/src/EdIt/parameters_flexer.cc
  #endif
  {
   if ( yyin->eof() || yyin->fail() )
-@@ -1396,7 +1396,7 @@
+@@ -7510,7 +7510,7 @@
  #endif
  }
 
