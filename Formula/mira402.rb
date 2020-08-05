@@ -42,9 +42,9 @@ __END__
 diff -ur a/src/EdIt/parameters_flexer.cc b/src/EdIt/parameters_flexer.cc
 --- a/src/EdIt/parameters_flexer.cc 2012-08-29 10:33:02.000000000 -0700
 +++ b/src/EdIt/parameters_flexer.cc 2012-10-22 10:58:26.000000000 -0700
-@@ -7478,9 +7478,9 @@
+@@ -7481,9 +7481,9 @@
  }
-
+ 
  #ifdef YY_INTERACTIVE
 -int yyFlexLexer::LexerInput( char* buf, int /* max_size */ )
 +size_t yyFlexLexer::LexerInput( char* buf, size_t /* max_size */ )
@@ -54,10 +54,10 @@ diff -ur a/src/EdIt/parameters_flexer.cc b/src/EdIt/parameters_flexer.cc
  #endif
  {
   if ( yyin->eof() || yyin->fail() )
-@@ -7507,7 +7507,7 @@
+@@ -7510,7 +7510,7 @@
  #endif
  }
-
+ 
 -void yyFlexLexer::LexerOutput( const char* buf, int size )
 +void yyFlexLexer::LexerOutput( const char* buf, size_t size )
  {
