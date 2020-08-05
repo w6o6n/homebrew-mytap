@@ -18,18 +18,23 @@ class Mira402 < Formula
   # def patches
     # DATA if MacOS.version >= :mountain_lion
   # end
-  if MacOS.version >= :mountain_lion
-    patch :DATA do
-    end
-  end
+  # if MacOS.version >= :mountain_lion
+  #   patch :DATA
+  # end
 
   def install
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--prefix=#{prefix}"
+    # Link with boost_system for boost::system::system_category().
+    # http://www.freelists.org/post/mira_talk/Linking-requires-boost-system
+    system "make LIBS=-lboost_system-mt install"
   end
 
   # def test
+  test do
+    system "#{bin}/mira"
+  end
 end
 
 __END__
