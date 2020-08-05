@@ -19,7 +19,7 @@ class Mira402 < Formula
     # DATA if MacOS.version >= :mountain_lion
   # end
   if MacOS.version >= :mountain_lion
-    patch :p0, :DATA do
+    patch :DATA do
     end
   end
 
