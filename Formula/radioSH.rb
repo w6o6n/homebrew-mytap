@@ -1,5 +1,5 @@
-class RadioSH < Formula
-  desc "Mac OS X command-line controller for the venerable USB-based Griffin radioSHARK, allowing you to programmatically control its two LED notifiers and tune to arbitrary FM and AM radio stations"
+class Radiosh < Formula
+  desc "Mac OS X command-line controller for the venerable USB-based Griffin radioSHARK"
   homepage "https://www.floodgap.com/software/radiosh/"
   url "https://www.floodgap.com/software/radiosh/radiosh-src.zip"
   version "1.0"
