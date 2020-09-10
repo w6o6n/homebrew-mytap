@@ -9,7 +9,7 @@ class Radiosh < Formula
   depends_on "cmake" => :build
 
   def install
-    system "make", "radiosh64"
+    system "make", "radiosh64", "PREFIX=#{prefix}"
     bin.install "radiosh"
   end
 

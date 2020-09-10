@@ -28,7 +28,8 @@ class Mira402 < Formula
                           "--prefix=#{prefix}"
     # Link with boost_system for boost::system::system_category().
     # http://www.freelists.org/post/mira_talk/Linking-requires-boost-system
-    system "make LIBS=-lboost_system-mt install"
+    system "make", "LIBS=-lboost_system-mt"
+    system "make", "install"
   end
 
   # def test
